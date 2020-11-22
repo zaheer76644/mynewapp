@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+.user1
+{
+        /* height: 100vh; */
+        display: flex;
+        margin-top: 150px;
+        align-items: top;
+        margin-left: -100px;
+        justify-content: center;
+    }
+
+    .user1{
+        font-weight: 700;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    .linking{
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 8px;
+        background-color: crimson;
+        background-size: 200%;
+        background-position: 0%;
+        transition: 0.4s;
+        text-decoration: none;
+        color: white;
+        margin-top: 50px;
+        margin-left: -200px;
+        text-align: center  ;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+

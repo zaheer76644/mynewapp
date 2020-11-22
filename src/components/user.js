@@ -2,7 +2,7 @@ import React, {usestate} from 'react';
 import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
 import Navbar from './Navbar';
-
+import './user.css'
 var userData = {};
 
 function user() {

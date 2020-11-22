@@ -31,7 +31,7 @@ function PasswordPage() {
                     <label htmlFor="password" id="password">New Password:</label>
                     <input type="password" name="password" id="password" onChange={ e => setDetails({...userInfo, password: e.target.value})}/>
                 </div>
-                <button onClick={() => changePassword()}>Save Password</button>
+                <button className="btn2" onClick={() => changePassword()}>Save Password</button>
                 </div>
                 
                 </form>

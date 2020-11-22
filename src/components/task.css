@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    text-transform: capitalize;
+  }
+
+  #userDataTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #userDataTable td, #userDataTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #userDataTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #userDataTable tr:hover {background-color: #ddd;}
+  
+  #userDataTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  #userDataTable .btn1{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: crimson;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: white;
+    margin-top: 10px;
+    text-align: center  ;
+    font-weight: 700;
+    cursor: pointer;
+  }

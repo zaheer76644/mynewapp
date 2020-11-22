@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import $ from 'jquery';
+import './task.css';
 
 const header = ["User Id.", "Title", "Value", "Action"];
 var userData = {};
@@ -46,7 +47,7 @@ function renderObj(userData){
                 <td>{data.id}</td>
                 <td>{data.title}</td>
                 <td>{data.completed.toString()}</td>
-                <td><button onClick={() => deleteUserData(data.id, i)}>Delete</button></td>
+                <td><button className="btn1" onClick={() => deleteUserData(data.id, i)}>Delete</button></td>
             </tr>
             );
         })}
