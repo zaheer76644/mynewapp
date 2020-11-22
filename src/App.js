@@ -24,31 +24,7 @@ function App() {
       sessionStorage.setItem('userCred', JSON.stringify(adminValue));
   }
   
-  // const [user, setUser] = useState({name:"", email:""})
-  // const [error, setError] = useState("");
-
-  // const Login = details =>{
-  //   console.log(details);
-  //   console.log(adminUser);
-  //   if(details.email == adminUser.email && details.password == adminUser.password){
-  //     console.log("Logged in")
-  //     setUser({
-  //       name:details.name,
-  //       email:details.email
-  //     });
-  //     sessionStorage.setItem('isLogin', true);
-  //     // this.context.router.transitionTo("/home"); 
-  //     <Redirect to='/home' />
-  //   }else {
-  //     console.log("Details not matched!");
-  //     setError("Details not matched!");
-  //   }
-  // }
-  
-
-  // return (
-    
-  // )
+ 
 
   // if(sessionStorage.getItem('isLogin') && sessionStorage.getItem('isLogin') == 'true'){
     <Navbar />
