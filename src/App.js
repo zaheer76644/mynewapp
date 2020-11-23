@@ -26,9 +26,9 @@ function App() {
   
  
 
-  // if(sessionStorage.getItem('isLogin') && sessionStorage.getItem('isLogin') == 'true'){
+  
     <Navbar />
-  // }
+
   
   return (
     <Router>
@@ -36,7 +36,6 @@ function App() {
       <Switch>
         
         <Route path='/' exact component={LoginForm} />
-        {/* <Route path='/login' exact component={LoginForm} /> */}
         <Route path='/home' exact component={Home} />
         <Route path='/task' exact component={Task} />
         <Route path='/user' exact component={User} />

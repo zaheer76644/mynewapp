@@ -15,7 +15,6 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
   const logout = () => {
     sessionStorage.setItem('isLogin', false);
-    // return <Redirect to='/login' />;
   }
 
 

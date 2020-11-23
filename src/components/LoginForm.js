@@ -39,19 +39,13 @@ function LoginForm() {
     if(sessionStorage.getItem('isLogin') && sessionStorage.getItem('isLogin') == 'true'){
        
         console.log("inside session ")
-        // this.context.router.transitionTo("/home"); 
         return <Redirect to='/home' />;
-    }else{
-        // sessionStorage.setItem('isLogin', false);
+    }else{    
         return (
             <form>
                 <div className="form-inner">
                     <h2>Login</h2>
-                    {(error != "") ? (<div className="error">{error}</div>): ""}
-                    <div className="form-group">
-                        <label htmlFor="name" id="name">Name:</label>
-                        <input type="text" name="name" id="name" onChange={ e => setDetails({...details, name: e.target.value})} value={details.name}/>
-                    </div>
+                    {(error != "") ? (<div className="error">{error}</div>): ""} 
                     <div className="form-group">
                         <label htmlFor="email" id="email">Email:</label>
                         <input type="email" name="email" id="email"onChange={ e => setDetails({...details, email: e.target.value})} value={details.email}/>
@@ -69,12 +63,6 @@ function LoginForm() {
     
 }
 
-// function storeData(){
-//     const apiUrl = 'http://jsonplaceholder.typicode.com/todos';
-//     fetch(apiUrl)
-//       .then((response) => response.json())
-//       .then((data) => console.log('This is your data', data));
-// }
 
 
 export default LoginForm;

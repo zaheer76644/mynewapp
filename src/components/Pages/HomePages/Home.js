@@ -7,9 +7,7 @@ import Navbar from '../../Navbar';
 
 function Home() {
 
-  // const [user, setUser] = useState({name:"", email:""})
-  // const [error, setError] = useState("");
-
+  
   if(sessionStorage.getItem('isLogin') && sessionStorage.getItem('isLogin') == 'true'){
     return (
       <>

@@ -9,7 +9,6 @@ function PasswordPage() {
     const [userInfo, setDetails] = useState({password:""});
 
     const changePassword = e =>{
-        // console.log(userInfo);
         var loggedUser = JSON.parse(sessionStorage.getItem('userCred'));
         loggedUser.password = userInfo.password;
         sessionStorage.setItem('userCred', JSON.stringify(loggedUser));
@@ -43,10 +42,7 @@ function PasswordPage() {
 }
 
 const changePassword = function(){
-    // console.log(userInfo)
-    // var loggedUser = JSON.parse(sessionStorage.getItem('userCred'));
-    // loggedUser.password = value;
-    // sessionStorage.setItem('userCred', JSON.stringify(loggedUser));
+
 }
 
 export default PasswordPage
